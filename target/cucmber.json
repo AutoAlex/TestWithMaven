@@ -1,0 +1,630 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "Valid Login",
+        "description": "",
+        "id": "manager-login;valid-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 189108310,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "the browser has started on the right link",
+            "match": {
+              "location": "Annotation.checkBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1726644103,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user enters \"mngr112006\" and \"upYvezA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mngr112006",
+                  "offset": 17
+                },
+                {
+                  "val": "upYvezA",
+                  "offset": 34
+                }
+              ],
+              "location": "Annotation.login(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 941684359,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "\"mngr112006\" is displayed on Manager page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mngr112006",
+                  "offset": 1
+                }
+              ],
+              "location": "Annotation.verifyLogin(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Manager Login",
+    "description": "",
+    "id": "manager-login",
+    "keyword": "Feature",
+    "uri": "1_Login.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Open New Customer page",
+        "description": "",
+        "id": "bank-customer;open-new-customer-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 925324023,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the browser has started on the right link",
+            "match": {
+              "location": "Annotation.checkBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1267155256,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user enters \"mngr112006\" and \"upYvezA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mngr112006",
+                  "offset": 17
+                },
+                {
+                  "val": "upYvezA",
+                  "offset": 34
+                }
+              ],
+              "location": "Annotation.login(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 48171344,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user lands on Welcome page",
+            "match": {
+              "location": "Annotation.verifyManager()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 482493997,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "selects New Customer page",
+            "match": {
+              "location": "Annotation.newCustomer()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "Create a new Customer",
+        "description": "",
+        "id": "bank-customer;create-a-new-customer",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 69719017,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user is on the New Customer page",
+            "match": {
+              "location": "Annotation.verifyNewCustomerPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2276353762,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user enters customer details",
+            "match": {
+              "location": "Annotation.addCustomerDetails(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Alex",
+                  "f",
+                  "15/09/1956",
+                  "Mercury",
+                  "CapeTown",
+                  "Western Cape",
+                  "456556",
+                  "1581581581",
+                  "alex@automytest.com",
+                  "pa55word"
+                ],
+                "line": 13
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 117853,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "customer is created successfully",
+            "match": {
+              "location": "Annotation.validateNewCustomer()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Edit Customer details",
+        "description": "",
+        "id": "bank-customer;edit-customer-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1563275265,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the user is on the Edit Customer page",
+            "match": {
+              "location": "Annotation.editCustomer()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2725711934,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user searches for customer and edits details",
+            "match": {
+              "location": "Annotation.editCustomerDetails(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Bellville",
+                  "CapeTown",
+                  "Western Cape",
+                  "456556",
+                  "1581581581",
+                  "alex@automytest.com"
+                ],
+                "line": 19
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 171746,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "customer details are edited",
+            "match": {
+              "location": "Annotation._validateCustEdit()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Bank Customer",
+    "description": "A bank manager should be able to create new customer and edit customer details",
+    "id": "bank-customer",
+    "keyword": "Feature",
+    "uri": "2_Customer.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Create and Edit Account",
+        "description": "",
+        "id": "bank-account;create-and-edit-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1503987776,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the browser has started on the right link",
+            "match": {
+              "location": "Annotation.checkBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1283601465,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user enters \"mngr112006\" and \"upYvezA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mngr112006",
+                  "offset": 17
+                },
+                {
+                  "val": "upYvezA",
+                  "offset": 34
+                }
+              ],
+              "location": "Annotation.login(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 552867427,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user opens new Account page",
+            "match": {
+              "location": "Annotation._openNewAccountPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1421641837,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "creates \"Current\" account and deposits \"500\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Current",
+                  "offset": 9
+                },
+                {
+                  "val": "500",
+                  "offset": 40
+                }
+              ],
+              "location": "Annotation._createAccount(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 977978543,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "opens edit Account page",
+            "match": {
+              "location": "Annotation._openEditAccountPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3027781480,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Changes Bank Account Type to \"Savings\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Savings",
+                  "offset": 30
+                }
+              ],
+              "location": "Annotation._editBankAccount(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Deposit Cash in Accountt",
+        "description": "",
+        "id": "bank-account;deposit-cash-in-accountt",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1323541413,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the browser has started on the right link",
+            "match": {
+              "location": "Annotation.checkBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1365930822,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user enters \"mngr112006\" and \"upYvezA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mngr112006",
+                  "offset": 17
+                },
+                {
+                  "val": "upYvezA",
+                  "offset": 34
+                }
+              ],
+              "location": "Annotation.login(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 800185368,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user opens Deposit page",
+            "match": {
+              "location": "Annotation._openDepositPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1804731321,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "deposits \"500\" into new \"BankAccount\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "500",
+                  "offset": 10
+                },
+                {
+                  "val": "BankAccount",
+                  "offset": 25
+                }
+              ],
+              "location": "Annotation._depositCash(String,String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Withdraw Cash from Account",
+        "description": "",
+        "id": "bank-account;withdraw-cash-from-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 742172357,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user opens Withdrawal page",
+            "match": {
+              "location": "Annotation._openWithdrawalPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1422960732,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the user withdraws \"200\" from Bank Account for \"Petrol\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 20
+                },
+                {
+                  "val": "Petrol",
+                  "offset": 48
+                }
+              ],
+              "location": "Annotation._withdrawCash(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "Transfer Cash to different account",
+        "description": "",
+        "id": "bank-account;transfer-cash-to-different-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1017492086,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user opens Fund Transfer page",
+            "match": {
+              "location": "Annotation._openFundTranserPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1531011794,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "From Account \"36572\" transfers \"100\" to \"Wife\u0027s Account\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "36572",
+                  "offset": 14
+                },
+                {
+                  "val": "100",
+                  "offset": 32
+                },
+                {
+                  "val": "Wife\u0027s Account",
+                  "offset": 41
+                }
+              ],
+              "location": "Annotation._transferCash(String,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "Check balance",
+        "description": "",
+        "id": "bank-account;check-balance",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 711593186,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "the user opens Balance Enquiry Page",
+            "match": {
+              "location": "Annotation._openBalanceEnquiry()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1674601948,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Checks Balance Enquiry",
+            "match": {
+              "location": "Annotation._checkBalanceEnquiry()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "View Mini Statement",
+        "description": "",
+        "id": "bank-account;view-mini-statement",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 751958946,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the user opens Mini Statement",
+            "match": {
+              "location": "Annotation._openMiniEnquiry()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1252881344,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Checks Mini Statement",
+            "match": {
+              "location": "Annotation._checkMiniStatement()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Bank Account",
+    "description": "",
+    "id": "bank-account",
+    "keyword": "Feature",
+    "uri": "3_Account.feature"
+  }
+]
