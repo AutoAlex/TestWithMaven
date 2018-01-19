@@ -1,0 +1,20 @@
+language: java
+dist: trusty
+sudo:
+
+before_install:
+ - export CHROME_BIN=/usr/bin/google-chrome
+ - export DISPLAY=:99.0
+ - sh -e /etc/init.d/xvfb start
+
+addons:
+  apt:
+    sources:
+     - google-chrome
+    packages:
+     - google-chrome-stable
+
+addons:
+  sauce_connect:
+    username: Alex_M
+    access_key: b6cc691a-1608-4500-ba18-58fc267830c2
