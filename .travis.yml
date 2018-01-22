@@ -15,6 +15,6 @@ addons:
      - google-chrome-stable
 
 addons:
-  sauce_connect:
+  sauce_connect: true
     username: Alex_M
     access_key: b6cc691a-1608-4500-ba18-58fc267830c2
