@@ -36,7 +36,8 @@ public class BrowserFactory {
                 driver = new FirefoxDriver();
 
             } else if (browser.equalsIgnoreCase("chrome")) {
-                System.out.println("local chrome started...");//System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+                System.out.println("local chrome started...");
+                System.setProperty("webdriver.chrome.driver", "chromedriver");
                 //System.setProperty("webdriver.chrome.driver", "chromedriver");
                 driver = new ChromeDriver();
             } else if (browser.equalsIgnoreCase("IE")) {
