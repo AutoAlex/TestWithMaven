@@ -1,6 +1,6 @@
 language: java
 dist: trusty
-sudo:
+sudo: required
 
 before_install:
  - export CHROME_BIN=/usr/bin/google-chrome
